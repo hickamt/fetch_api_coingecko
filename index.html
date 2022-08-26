@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="HTML, CSS, JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnClick with HTML, CSS & JS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Using Fetch() API</h1>
+    <h5>
+      <a
+        target="_blank"
+        href="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=binancecoin%2C%20bitcoin%2C%20ethereum%2C%20polkadot%2C%20ripple%2C&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C%2024h"
+        >Click -> CoinGecko API Data</a
+      >
+    </h5>
+
+    <div id="crypto-table">
+      The following table data is pulled from CoinGecko API. When the 'Show
+      More' button is clicked, the data is pulled using the fetch() api request.
+      This event will only occur once and new information can only be pulled
+      upon the referesh of the page. CoinGecko limits the free pull requests to
+      50 calls per minute.
+
+      <br /><br />
+
+      <table class="table table-striped">
+        <tr id="table-headers"></tr>
+
+        <tbody id="myTable"></tbody>
+      </table>
+    </div>
+
+    <button id="show-more">Show  Table</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>

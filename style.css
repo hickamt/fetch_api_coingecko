@@ -1,0 +1,86 @@
+body {
+  background: black;
+}
+
+h1 {
+  margin-top: 28px;
+  color: white;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+a {
+  color: #3885d1;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  margin: auto;
+}
+
+th {
+  color: white;
+  font-family: Georgia, serif;
+}
+
+tr {
+  border: 0.5px solid white;
+  width: 20%;
+  text-align: center;
+  color: white;
+  background: rgba(7, 90, 245, 0.15);
+}
+
+#table-headers {
+  text-align: center;
+  background-color: #3885d1;
+  color: white;
+}
+
+#crypto-table {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(7, 90, 245, 0.15);
+  font-size: 14px;
+  text-align: justify;
+  width: 375px;
+  padding: 1rem;
+  font-family: calibri;
+  color: white;
+  margin: 15px auto;
+  max-height: 160px;
+  overflow: hidden;
+
+  /* Set Content Transitions */
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s ease-in-out 0.25s;
+}
+
+#crypto-table.open {
+  max-height: 1000px;
+
+  /* Set Content Transitions */
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s ease-in-out 0.25s;
+}
+
+#show-more {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(7, 90, 245, 0.15);
+  color: white;
+  font-family: Georgia, serif;
+  display: block;
+  width: 140px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  cursor: pointer;
+}
