@@ -1,4 +1,3 @@
-*span style='color:black'*
 # FETCH() API | CoinGecko Data to HTML Table View 
 
 This application serves to fetch() data from CoinGecko's API and output the data to HTML page. It is built upon my onClick() microfrontend example file that illustrates the use of button transitions and onclick event triggers.
@@ -40,4 +39,3 @@ const response = await fetch(coingeckoURL);
 const data = await response.json();
 console.table(data);
 ```
-*/span*
